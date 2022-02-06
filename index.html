@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener Microservice</title>
+
+    <!-- main styles -->
+    <link rel="stylesheet" href="./public/index.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <h1 class="title">URL Shortener Microservice</h1>
+    </header>
+
+    <div class="container">
+        <h3>Short URL Creation</h3>
+        <p>Example: POST /api/shorturl - https://www.google.com</p>
+    </div>
+
+    <div class="container">
+        <form class="post-form" action="api/shorturl" method="post">
+            <fieldset>
+                <legend>URL Shortener</legend>
+                <label for="url_input">URL:</label>
+                <input type="text" id="url_input" name="url" placeholder="https://www.freecodecamp.org/">
+                <input type="submit" value="POST URL">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="examples">
+            <h3>Example Usage:</h3>
+            <ul>
+                <li><a href="/api/shorturl/1">/api/shorturl/1</a></li>
+            </ul>
+            <h4>Will Redirect to:</h4>
+            <p>https://forum.freecodecamp.org/</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="author">
+            <h4>by AmmarDab3an</h4>
+        </div>
+    </div>
+</body>
+</html>

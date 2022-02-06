@@ -1,0 +1,62 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2;
+}
+
+body header {
+  position: relative;
+  margin-bottom: 20px;
+}
+body header h1 {
+  font-weight: 400;
+}
+body header ::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+code {
+  display: block;
+  font-family: Consolas, "courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+  margin: 10px 0;
+}
+
+.container {
+  margin: 20px auto;
+  width: 400px;
+  min-width: fit-content;
+  padding: 0 20px;
+}
+
+.author h4 {
+  font-weight: 400;
+}
+
+.container .post-form fieldset {
+  padding-bottom: 30px;
+}
+.container .post-form * {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
